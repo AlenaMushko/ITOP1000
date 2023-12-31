@@ -1,87 +1,87 @@
-<section class="converter">
-    <ul class="converter__list">
-        <li class="converter__item">
-            <h4>USD</h4>
-            <div class="converter__wrapper">
-                <mat-form-field>
-                    <mat-label>Сума</mat-label>
-                    <input type="number" matInput [(ngModel)]="inputValue1USD" (ngModelChange)="setActiveInput('input1USD', 'USD', inputValue1USD)">
-                </mat-form-field>
+<!--<section class="converter">-->
+<!--    <ul class="converter__list">-->
+<!--        <li class="converter__item">-->
+<!--            <h4>USD</h4>-->
+<!--            <div class="converter__wrapper">-->
+<!--                <mat-form-field>-->
+<!--                    <mat-label>Сума</mat-label>-->
+<!--                    <input type="number" matInput [(ngModel)]="inputValue1USD" (ngModelChange)="setActiveInput('input1USD', 'USD', inputValue1USD)">-->
+<!--                </mat-form-field>-->
 
-                <div class="converter__option">
-                    <select [(ngModel)]="currencyToUSD" (ngModelChange)="setSelect('USD', currencyToUSD)" class="converter__select">
-                        <option value="UAH">UAH</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                    </select>
+<!--                <div class="converter__option">-->
+<!--                    <select [(ngModel)]="currencyToUSD" (ngModelChange)="setSelect('USD', currencyToUSD)" class="converter__select">-->
+<!--                        <option value="UAH">UAH</option>-->
+<!--                        <option value="USD">USD</option>-->
+<!--                        <option value="EUR">EUR</option>-->
+<!--                    </select>-->
 
-                    <div  [class.hidden]="!isMobile">
-                        <ng-icon name="bootstrapArrowUpSquareFill" class="converter__icon-mobile hidden"
-                                 [class.visible]="activeInputUSD && activeInputUSD === 'input2USD'"
-                                 (click)="onClickCalculation('USD', inputValue2USD, 'input2USD')"></ng-icon>
-                        <ng-icon name="bootstrapArrowDownSquareFill" class="converter__icon-mobile hidden"
-                                 [class.visible]="activeInputUSD && activeInputUSD === 'input1USD'"
-                                 (click)="onClickCalculation('USD',  inputValue1USD, 'input1USD')"></ng-icon>
-                    </div>
+<!--                    <div  [class.hidden]="!isMobile">-->
+<!--                        <ng-icon name="bootstrapArrowUpSquareFill" class="converter__icon-mobile hidden"-->
+<!--                                 [class.visible]="activeInputUSD && activeInputUSD === 'input2USD'"-->
+<!--                                 (click)="onClickCalculation('USD', inputValue2USD, 'input2USD')"></ng-icon>-->
+<!--                        <ng-icon name="bootstrapArrowDownSquareFill" class="converter__icon-mobile hidden"-->
+<!--                                 [class.visible]="activeInputUSD && activeInputUSD === 'input1USD'"-->
+<!--                                 (click)="onClickCalculation('USD',  inputValue1USD, 'input1USD')"></ng-icon>-->
+<!--                    </div>-->
 
-                    <div  [class.hidden]="isMobile">
-                        <ng-icon name="bootstrapArrowRightSquareFill" class="converter__icon hidden"
-                                 [class.visible]="activeInputUSD && activeInputUSD === 'input1USD' "
-                                 (click)="onClickCalculation('USD',  inputValue1USD, 'input1USD')"></ng-icon>
-                        <ng-icon name="bootstrapArrowLeftSquareFill" class="converter__icon hidden"
-                                 [class.visible]="activeInputUSD && activeInputUSD === 'input2USD'"
-                                 (click)="onClickCalculation('USD', inputValue2USD, 'input2USD')"></ng-icon>
-                    </div>
-                </div>
+<!--                    <div  [class.hidden]="isMobile">-->
+<!--                        <ng-icon name="bootstrapArrowRightSquareFill" class="converter__icon hidden"-->
+<!--                                 [class.visible]="activeInputUSD && activeInputUSD === 'input1USD' "-->
+<!--                                 (click)="onClickCalculation('USD',  inputValue1USD, 'input1USD')"></ng-icon>-->
+<!--                        <ng-icon name="bootstrapArrowLeftSquareFill" class="converter__icon hidden"-->
+<!--                                 [class.visible]="activeInputUSD && activeInputUSD === 'input2USD'"-->
+<!--                                 (click)="onClickCalculation('USD', inputValue2USD, 'input2USD')"></ng-icon>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <mat-form-field>
-                    <mat-label>Сума</mat-label>
-                    <input type="number"  matInput [(ngModel)]="inputValue2USD" (ngModelChange)="setActiveInput('input2USD', 'USD', inputValue2USD)">
-                </mat-form-field>
-            </div>
-        </li>
+<!--                <mat-form-field>-->
+<!--                    <mat-label>Сума</mat-label>-->
+<!--                    <input type="number"  matInput [(ngModel)]="inputValue2USD" (ngModelChange)="setActiveInput('input2USD', 'USD', inputValue2USD)">-->
+<!--                </mat-form-field>-->
+<!--            </div>-->
+<!--        </li>-->
 
-        <li class="converter__item">
-            <h4>EUR</h4>
-            <div class="converter__wrapper">
-                <mat-form-field>
-                    <mat-label>Сума</mat-label>
-                    <input type="number" matInput [(ngModel)]="inputValue1EUR" (ngModelChange)="setActiveInput('input1EUR', 'EUR', inputValue1EUR)">
-                </mat-form-field>
+<!--        <li class="converter__item">-->
+<!--            <h4>EUR</h4>-->
+<!--            <div class="converter__wrapper">-->
+<!--                <mat-form-field>-->
+<!--                    <mat-label>Сума</mat-label>-->
+<!--                    <input type="number" matInput [(ngModel)]="inputValue1EUR" (ngModelChange)="setActiveInput('input1EUR', 'EUR', inputValue1EUR)">-->
+<!--                </mat-form-field>-->
 
-                <div class="converter__option">
-                    <select [(ngModel)]="currencyToEUR" (ngModelChange)="setSelect('EUR', currencyToEUR)" class="converter__select">
-                        <option value="UAH">UAH</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                    </select>
+<!--                <div class="converter__option">-->
+<!--                    <select [(ngModel)]="currencyToEUR" (ngModelChange)="setSelect('EUR', currencyToEUR)" class="converter__select">-->
+<!--                        <option value="UAH">UAH</option>-->
+<!--                        <option value="USD">USD</option>-->
+<!--                        <option value="EUR">EUR</option>-->
+<!--                    </select>-->
 
-                    <div  [class.hidden]="!isMobile">
-                        <ng-icon name="bootstrapArrowUpSquareFill" class="converter__icon-mobile hidden"
-                                 [class.visible]="activeInputEUR && activeInputEUR === 'input2EUR'"
-                                 (click)="onClickCalculation('EUR', inputValue2EUR, 'input2EUR')"></ng-icon>
-                        <ng-icon name="bootstrapArrowDownSquareFill" class="converter__icon-mobile hidden"
-                                 [class.visible]="activeInputEUR && activeInputEUR === 'input1EUR'"
-                                 (click)="onClickCalculation('EUR', inputValue1EUR, 'input1EUR')"></ng-icon>
-                    </div>
+<!--                    <div  [class.hidden]="!isMobile">-->
+<!--                        <ng-icon name="bootstrapArrowUpSquareFill" class="converter__icon-mobile hidden"-->
+<!--                                 [class.visible]="activeInputEUR && activeInputEUR === 'input2EUR'"-->
+<!--                                 (click)="onClickCalculation('EUR', inputValue2EUR, 'input2EUR')"></ng-icon>-->
+<!--                        <ng-icon name="bootstrapArrowDownSquareFill" class="converter__icon-mobile hidden"-->
+<!--                                 [class.visible]="activeInputEUR && activeInputEUR === 'input1EUR'"-->
+<!--                                 (click)="onClickCalculation('EUR', inputValue1EUR, 'input1EUR')"></ng-icon>-->
+<!--                    </div>-->
 
-                    <div  [class.hidden]="isMobile">
-                        <ng-icon name="bootstrapArrowRightSquareFill" class="converter__icon hidden"
-                                 [class.visible]="activeInputEUR && activeInputEUR === 'input1EUR' "
-                                 (click)="onClickCalculation('EUR', inputValue1EUR, 'input1EUR')"></ng-icon>
-                        <ng-icon name="bootstrapArrowLeftSquareFill" class="converter__icon hidden"
-                                 [class.visible]="activeInputEUR && activeInputEUR === 'input2EUR'"
-                                 (click)="onClickCalculation('EUR', inputValue2EUR, 'input2EUR')"></ng-icon>
-                    </div>
-                </div>
+<!--                    <div  [class.hidden]="isMobile">-->
+<!--                        <ng-icon name="bootstrapArrowRightSquareFill" class="converter__icon hidden"-->
+<!--                                 [class.visible]="activeInputEUR && activeInputEUR === 'input1EUR' "-->
+<!--                                 (click)="onClickCalculation('EUR', inputValue1EUR, 'input1EUR')"></ng-icon>-->
+<!--                        <ng-icon name="bootstrapArrowLeftSquareFill" class="converter__icon hidden"-->
+<!--                                 [class.visible]="activeInputEUR && activeInputEUR === 'input2EUR'"-->
+<!--                                 (click)="onClickCalculation('EUR', inputValue2EUR, 'input2EUR')"></ng-icon>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <mat-form-field>
-                    <mat-label>Сума</mat-label>
-                    <input type="number"  matInput [(ngModel)]="inputValue2EUR" (ngModelChange)="setActiveInput('input2EUR', 'EUR', inputValue2EUR)">
-                </mat-form-field>
+<!--                <mat-form-field>-->
+<!--                    <mat-label>Сума</mat-label>-->
+<!--                    <input type="number"  matInput [(ngModel)]="inputValue2EUR" (ngModelChange)="setActiveInput('input2EUR', 'EUR', inputValue2EUR)">-->
+<!--                </mat-form-field>-->
 
-            </div>
-        </li>
-    </ul>
+<!--            </div>-->
+<!--        </li>-->
+<!--    </ul>-->
 
-</section>
+<!--</section>-->

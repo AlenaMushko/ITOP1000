@@ -15,15 +15,7 @@ export class HeaderComponent implements OnInit{
   }
 
   ngOnInit():void {
-    this.privatbankService.getCurrencies().subscribe(
-        data => {
-          this.courses = data
-        },
-        error => {
-          console.error('There was an error!', error);
-        }
-    );
-    // this.privatbankService.getCurrencies().subscribe(data=> this.courses = data);
+    this.privatbankService.getCurrencies().subscribe(data=> this.courses = data);
   }
 
 }
