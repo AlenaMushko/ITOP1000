@@ -1,1 +1,1 @@
-export * from './privatbank.service';
+export * from './monobank.service';

@@ -1,15 +1,14 @@
 <div class="header">
-<!--    <ul>-->
-<!--        <li *ngFor="let course of courses">-->
-<!--            <h4>{{ course.ccy }}</h4>-->
-<!--            <div>-->
-<!--               <p>Купівля - {{ course.buy | number:'1.2-2' }}</p>-->
-<!--                <p>Продаж - {{ course.sale | number:'1.2-2'}}</p>-->
-<!--            </div>-->
-<!--        </li>-->
-<!--    </ul>-->
+    <ul>
+        <li *ngFor="let course of courses">
+            <h4>{{ course.ccy }}</h4>
+            <div>
+               <p>Купівля - {{ course.buy | number:'1.2-2' }}</p>
+                <p>Продаж - {{ course.sale | number:'1.2-2'}}</p>
+            </div>
+        </li>
+    </ul>
     <div class="positioned-div">
         <h2 class="header__title">Станом на  {{ currentDate | date: 'mediumDate' }}</h2>
     </div>
-    {{courses | json}}
 </div>

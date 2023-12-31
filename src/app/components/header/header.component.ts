@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ICours} from "../../interfaces";
-import {PrivatbankService} from "../../services";
+import {MonobankService} from "../../services";
 
 @Component({
   selector: 'app-header',
@@ -11,11 +11,11 @@ export class HeaderComponent implements OnInit{
   courses:ICours[];
   currentDate: Date = new Date();
 
-  constructor(private privatbankService:PrivatbankService) {
+  constructor(private monobankService:MonobankService) {
   }
 
-  ngOnInit():void {
-    this.privatbankService.getCurrencies().subscribe(data=> this.courses = data);
+  ngOnInit(): void {
+    this.monobankService.getCurrencies().subscribe(data => this.courses = data);
   }
 
 }
