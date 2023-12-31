@@ -61,4 +61,7 @@ The CurrencyConverter component contains the logic for currency conversion. It a
 - Upon changing the currency or the amount entered an input, the conversion will be recalculated.
 
 ### Support
-For questions or suggestions, you can contact the project author at [email](myshko.alona@gmail.com).
+For questions or suggestions, you can contact the project author at  email 
+```bush
+myshko.alona@gmail.com
+```
