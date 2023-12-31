@@ -1,0 +1,47 @@
+body { /* Colors */
+    --primary-color: #03071f;
+    --background-color: #1a659e;
+    --border-color: #021364;
+    --text-primary-color: #f5f3f5;
+
+    --box-shadow: #021364 0px 2px 1px -1px,
+    #021364 0px 1px 1px 0px,
+    #021364 0px 1px 3px 0px;
+
+    /* Components: Button */
+    --button-transition: color 0.5s ease;
+    --button-hover-color: #de670d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+}
+
+p, ul, li, ol {
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: var(--text-primary-color);
+    height: 100%;
+    background-image: url('/assets/background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
