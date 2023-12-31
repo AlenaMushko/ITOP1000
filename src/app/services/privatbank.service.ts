@@ -10,6 +10,7 @@ import {baseUrl} from "../constants";
 export class PrivatbankService {
   constructor(private httpClient : HttpClient) {}
 
+
 getCurrencies(){
     return this.httpClient.get<ICours[]>(baseUrl)
 }
