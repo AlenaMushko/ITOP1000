@@ -1,6 +1,7 @@
 {
   "/api/*": {
-    "target": "https://api.privatbank.ua",
+//    "target": "https://api.privatbank.ua",
+    "target": "http://localhost:3000",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",
