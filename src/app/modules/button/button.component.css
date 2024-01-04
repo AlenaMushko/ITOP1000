@@ -1,0 +1,21 @@
+
+
+.converter__icon-mobile,
+.converter__icon {
+    font-size: 32px;
+    transition: var(--button-transition);
+}
+
+.converter__icon-mobile:hover,
+.converter__icon:hover {
+    cursor: pointer;
+    color: var(--button-hover-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

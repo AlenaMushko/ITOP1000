@@ -1,1 +1,1 @@
-export {ICours} from './cours.interface';
+export { ICours } from './cours.interface';

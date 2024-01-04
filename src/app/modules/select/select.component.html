@@ -1,0 +1,9 @@
+<select
+  id="currency-select"
+  [(ngModel)]="selectedCurrency"
+  (ngModelChange)="onCurrencyChange($event)"
+  class="converter__select">
+  <option *ngFor="let currency of currencies" [value]="currency">
+    {{ currency }}
+  </option>
+</select>

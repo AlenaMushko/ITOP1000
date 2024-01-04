@@ -1,0 +1,27 @@
+<div class="converter__item">
+  <h2 class="converter__title">{{ baseCurrency }}</h2>
+  <div class="converter__wrapper">
+    <app-input
+      [baseCurrency]="baseCurrency"
+      [(value)]="inputValue1"
+      (valueChange)="setActiveInput('input1', $event)"></app-input>
+
+    <div class="converter__option">
+      <app-select
+        [currencies]="['UAH', 'USD', 'EUR']"
+        [(ngModel)]="currencyTo"
+        (currencyChange)="setSelect($event)"></app-select>
+
+      <app-button
+        [isMobile]="isMobile"
+        [activeInput]="activeInput"
+        (buttonClick)="onClickCalculation()">
+      </app-button>
+    </div>
+
+    <app-input
+      [baseCurrency]="baseCurrency"
+      [(value)]="inputValue2"
+      (valueChange)="setActiveInput('input2', $event)"></app-input>
+  </div>
+</div>

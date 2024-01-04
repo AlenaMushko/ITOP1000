@@ -1,0 +1,29 @@
+<div [class.hidden]="!isMobile">
+  <ng-icon
+    name="bootstrapArrowUpSquareFill"
+    class="converter__icon-mobile hidden"
+    [class.visible]="activeInput && activeInput === 'input2'"
+    (click)="onClick()">
+  </ng-icon>
+  <ng-icon
+    name="bootstrapArrowDownSquareFill"
+    class="converter__icon-mobile hidden"
+    [class.visible]="activeInput && activeInput === 'input1'"
+    (click)="onClick()">
+  </ng-icon>
+</div>
+
+<div [class.hidden]="isMobile">
+  <ng-icon
+    name="bootstrapArrowRightSquareFill"
+    class="converter__icon hidden"
+    [class.visible]="activeInput && activeInput === 'input1'"
+    (click)="onClick()">
+  </ng-icon>
+  <ng-icon
+    name="bootstrapArrowLeftSquareFill"
+    class="converter__icon hidden"
+    [class.visible]="activeInput && activeInput === 'input2'"
+    (click)="onClick()">
+  </ng-icon>
+</div>

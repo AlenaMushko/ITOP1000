@@ -3,7 +3,7 @@ const codeUSD = 840;
 const codeEUR = 978;
 
 export const codeConstant = {
-    codeEUR,
-    codeUSD,
-    codeUAH,
+  codeEUR,
+  codeUSD,
+  codeUAH,
 };
